@@ -11,7 +11,7 @@
         android:theme="@style/Theme.Notas">
         <activity
             android:name=".Log"
-            android:exported="false" />
+            android:exported="false"            />
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -1,20 +1,403 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:translationY="-20dp"
     tools:context=".Log">
 
-    <TextView
-        android:id="@+id/resultado"
-        android:layout_width="231dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="92dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.261"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="-20dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/lognome3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:shadowColor="@color/purple_700"
+            android:textAlignment="gravity"
+            android:textColor="@color/purple_700"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:translationY="-20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+        <TextView
+            android:id="@+id/logdescricao3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="17dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationY="-20dp"
+            app:layout_constraintStart_toEndOf="@+id/imgdesc3"
+            app:layout_constraintTop_toBottomOf="@+id/logvalor3" />
+
+        <TextView
+            android:id="@+id/logvalor3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:translationY="-20dp"
+            app:layout_constraintStart_toEndOf="@+id/imgmoney3"
+            app:layout_constraintTop_toBottomOf="@+id/lognome3" />
+
+        <TextView
+            android:id="@+id/logdata3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="17dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:translationY="-20dp"
+            app:layout_constraintStart_toEndOf="@+id/imgcalendar3"
+            app:layout_constraintTop_toBottomOf="@+id/lognome3" />
+
+        <TextView
+            android:id="@+id/logproduto3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/purple_700"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:translationY="-20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.027"
+            app:layout_constraintStart_toEndOf="@+id/lognome3"
+            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+        <TextView
+            android:id="@+id/lognome2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:textAlignment="gravity"
+            android:textColor="@color/purple_700"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:translationY="-20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <TextView
+            android:id="@+id/logvalor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:translationY="-20dp"
+            app:layout_constraintStart_toEndOf="@+id/imgmoney2"
+            app:layout_constraintTop_toBottomOf="@+id/lognome2" />
+
+        <TextView
+            android:id="@+id/logdata2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="16dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:translationY="-20dp"
+            app:layout_constraintStart_toEndOf="@+id/imgcalendar2"
+            app:layout_constraintTop_toBottomOf="@+id/lognome2" />
+
+        <TextView
+            android:id="@+id/logdescricao2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="17dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationY="-20dp"
+            app:layout_constraintStart_toEndOf="@+id/imgdesc2"
+            app:layout_constraintTop_toBottomOf="@+id/logvalor2" />
+
+        <TextView
+            android:id="@+id/logproduto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="19dp"
+            android:textColor="@color/purple_700"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:translationY="-20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.027"
+            app:layout_constraintStart_toEndOf="@+id/lognome2"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <TextView
+            android:id="@+id/lognome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="72dp"
+            android:text="TextView"
+            android:textAlignment="gravity"
+            android:textColor="@color/purple_700"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:translationY="-20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgdesc3"
+            android:layout_width="22dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="22dp"
+            android:translationY="-20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logvalor3"
+            app:srcCompat="@drawable/pencil" />
+
+        <TextView
+            android:id="@+id/logproduto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="74dp"
+            android:text="TextView"
+            android:textColor="@color/purple_700"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:translationY="-20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.006"
+            app:layout_constraintStart_toEndOf="@+id/lognome"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="409dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/purple_500"
+            android:translationY="-20dp"
+            app:layout_constraintTop_toBottomOf="@+id/logdescricao"
+            tools:layout_editor_absoluteX="-2dp" />
+
+        <ImageView
+            android:id="@+id/imgcalendar2"
+            android:layout_width="29dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="52dp"
+            android:translationY="-20dp"
+            app:layout_constraintBottom_toTopOf="@+id/divider2"
+            app:layout_constraintStart_toEndOf="@+id/logvalor2"
+            app:layout_constraintTop_toBottomOf="@+id/lognome2"
+            app:layout_constraintVertical_bias="0.68"
+            app:srcCompat="@drawable/calendar" />
+
+        <Button
+            android:id="@+id/btnLimpeza"
+            android:layout_width="96dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/black"
+            android:text="Limpar Histórico"
+            android:textSize="10dp"
+            android:translationY="-20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvteste2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="12dp"
+            android:text="TextView"
+            android:translationY="-20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="409dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="168dp"
+            android:background="@color/purple_500"
+            android:translationY="-20dp"
+            app:layout_constraintTop_toBottomOf="@+id/logdescricao"
+            tools:layout_editor_absoluteX="-2dp" />
+
+        <TextView
+            android:id="@+id/logvalor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:translationY="-20dp"
+            app:layout_constraintStart_toEndOf="@+id/imgmoney"
+            app:layout_constraintTop_toBottomOf="@+id/lognome" />
+
+        <ImageView
+            android:id="@+id/imgdesc"
+            android:layout_width="22dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="16dp"
+            android:translationY="-20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logvalor"
+            app:srcCompat="@drawable/pencil" />
+
+        <TextView
+            android:id="@+id/logdescricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:translationY="-20dp"
+            app:layout_constraintStart_toEndOf="@+id/imgdesc"
+            app:layout_constraintTop_toBottomOf="@+id/logvalor" />
+
+        <ImageView
+            android:id="@+id/imgcalendar"
+            android:layout_width="29dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="18dp"
+            android:translationY="-20dp"
+            app:layout_constraintBottom_toTopOf="@+id/divider"
+            app:layout_constraintStart_toEndOf="@+id/logvalor"
+            app:layout_constraintTop_toBottomOf="@+id/lognome"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/logdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:translationY="-20dp"
+            app:layout_constraintStart_toEndOf="@+id/imgcalendar"
+            app:layout_constraintTop_toBottomOf="@+id/lognome" />
+
+        <ImageView
+            android:id="@+id/imgmoney"
+            android:layout_width="25dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="22dp"
+            android:translationY="-20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lognome"
+            app:srcCompat="@drawable/money" />
+
+        <ImageView
+            android:id="@+id/imgcalendar3"
+            android:layout_width="29dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="52dp"
+            android:translationY="-20dp"
+            app:layout_constraintBottom_toTopOf="@+id/divider3"
+            app:layout_constraintStart_toEndOf="@+id/logvalor3"
+            app:layout_constraintTop_toBottomOf="@+id/lognome3"
+            app:layout_constraintVertical_bias="0.333"
+            app:srcCompat="@drawable/calendar" />
+
+        <ImageView
+            android:id="@+id/imgdesc2"
+            android:layout_width="22dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:translationY="-20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logvalor2"
+            app:srcCompat="@drawable/pencil" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="409dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="328dp"
+            android:background="@color/purple_500"
+            android:translationY="-20dp"
+            app:layout_constraintTop_toBottomOf="@+id/logdescricao"
+            tools:layout_editor_absoluteX="-3dp" />
+
+        <ImageView
+            android:id="@+id/imgmoney3"
+            android:layout_width="25dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="22dp"
+            android:translationY="-20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lognome3"
+            app:srcCompat="@drawable/money" />
+
+        <ImageView
+            android:id="@+id/imgmoney2"
+            android:layout_width="25dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="22dp"
+            android:translationY="-20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lognome2"
+            app:srcCompat="@drawable/money" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:translationY="-20dp"
+            app:layout_constraintGuide_begin="20dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
