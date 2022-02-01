@@ -114,24 +114,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //Verifica se as caixas foram preenchidas corretamente
-        fun checkBoxes(){
-            if(tvnome.text.toString() == ""){
-                Toast.makeText(this, "Informe a Loja", Toast.LENGTH_SHORT).show()
-            } else{
-                if(tvvalor.text.toString() == ""){
-                    Toast.makeText(this, "Informe o valor", Toast.LENGTH_SHORT).show()
-                } else{
-                    if(tvdata.text.toString() == ""){
-                        Toast.makeText(this, "Informe a data", Toast.LENGTH_SHORT).show()
-
-                    } else {
-
-                    }
-                }
-            }
-        }
-
         //Limpa as caixas de texto para outros input
         fun clearBoxes(){
             tvnome.text = ""
@@ -155,6 +137,12 @@ class MainActivity : AppCompatActivity() {
         //Botão para salvar os dados
         btnSave.setOnClickListener{
 
+            //Verificando se ainda cabem mais registros
+            val SaveCount = getSaveCount()
+            if (SaveCount >= 10){
+                Toast.makeText(this, "Limite de registros atingido", Toast.LENGTH_SHORT).show()
+            }
+            else{
             //Verificando se as caixas foram preenchidas corretamente
 //            if(tvnome.text.toString() == ""){
 //                Toast.makeText(this, "Informe a Loja", Toast.LENGTH_SHORT).show()
@@ -176,6 +164,7 @@ class MainActivity : AppCompatActivity() {
 //                    }
 //                }
 //            }
+            }
         }
 
         //Botão para recuperar os dados

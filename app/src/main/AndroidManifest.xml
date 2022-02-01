@@ -10,8 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Notas">
         <activity
+            android:name=".PopUpEditor"
+            android:theme="@android:style/Theme.Dialog"
+            android:exported="false" />
+        <activity
             android:name=".Log"
-            android:exported="false"            />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
