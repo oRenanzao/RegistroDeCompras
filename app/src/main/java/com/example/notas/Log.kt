@@ -42,7 +42,6 @@ class Log : AppCompatActivity() {
         val logproduto = findViewById<TextView>(R.id.logproduto)
         val logdata = findViewById<TextView>(R.id.logdata)
         val logdescricao = findViewById<TextView>(R.id.logdescricao)
-        val btnEdit1 = findViewById<ImageView>(R.id.btnEdit1)
 
         val lognome2 = findViewById<TextView>(R.id.lognome2)
         val logvalor2 = findViewById<TextView>(R.id.logvalor2)
@@ -675,12 +674,6 @@ class Log : AppCompatActivity() {
             imgcalendar10.isVisible = false
             divider10.isVisible = false
         }
-
-        //Habilitando a edição de caixas
-        btnEdit1.setOnClickListener{
-
-        }
-
 
         //Exibindo os valores nas caixas de acordo com a contagem de salvamentos
         if (CONTTT == "1"){

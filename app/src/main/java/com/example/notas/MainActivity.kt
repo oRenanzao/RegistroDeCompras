@@ -129,7 +129,7 @@ class MainActivity : AppCompatActivity() {
         if (intent.getStringExtra("logcont").toString() == "Clicado"){
             tvcontagem.text = intent.getStringExtra("logcont").toString()
             clearSaveCount()
-            }
+        }
 
         //Colocando o valor da data automaticamente
         data_atual()
@@ -144,26 +144,26 @@ class MainActivity : AppCompatActivity() {
             }
             else{
             //Verificando se as caixas foram preenchidas corretamente
-//            if(tvnome.text.toString() == ""){
-//                Toast.makeText(this, "Informe a Loja", Toast.LENGTH_SHORT).show()
-//            } else{
-//                if(tvproduto.text.toString() == ""){
-//                    Toast.makeText(this, "Informe o Produto", Toast.LENGTH_SHORT).show()
-//                } else{
-//                    if(tvvalor.text.toString() == ""){
-//                        Toast.makeText(this, "Informe o Valor", Toast.LENGTH_SHORT).show()
-//                    } else{
-//                        if(tvdata.text.toString() == ""){
-//                            Toast.makeText(this, "Informe a Data", Toast.LENGTH_SHORT).show()
-//                        } else {
-//                            //Salvando os dados e limpando as caixas
+            if(tvnome.text.toString() == ""){
+                Toast.makeText(this, "Informe a Loja", Toast.LENGTH_SHORT).show()
+            } else{
+                if(tvproduto.text.toString() == ""){
+                    Toast.makeText(this, "Informe o Produto", Toast.LENGTH_SHORT).show()
+                } else{
+                    if(tvvalor.text.toString() == ""){
+                        Toast.makeText(this, "Informe o Valor", Toast.LENGTH_SHORT).show()
+                    } else{
+                        if(tvdata.text.toString() == ""){
+                            Toast.makeText(this, "Informe a Data", Toast.LENGTH_SHORT).show()
+                        } else {
+                            //Salvando os dados e limpando as caixas
                         saveData()
                         goToLog()
                         clearBoxes()
-//                        }
-//                    }
-//                }
-//            }
+                        }
+                    }
+                }
+            }
             }
         }
 

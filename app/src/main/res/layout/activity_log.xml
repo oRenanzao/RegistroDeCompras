@@ -229,6 +229,7 @@
             android:layout_marginEnd="16dp"
             android:backgroundTint="@color/black"
             android:text="Limpar Histórico"
+            android:textColor="@color/white"
             android:textSize="10dp"
             android:translationY="-22dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -242,8 +243,10 @@
             android:layout_marginEnd="20dp"
             android:text="TextView"
             android:translationY="-22dp"
+            android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/divider" />
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            tools:visibility="visible" />
 
         <View
             android:id="@+id/divider2"
@@ -1226,16 +1229,6 @@
             android:orientation="horizontal"
             android:translationY="-22dp"
             app:layout_constraintGuide_begin="20dp" />
-
-        <ImageView
-            android:id="@+id/btnEdit1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
-            android:layout_marginEnd="44dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/divider"
-            app:srcCompat="@android:drawable/ic_menu_edit" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
