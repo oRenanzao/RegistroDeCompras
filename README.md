@@ -1,5 +1,7 @@
 # primeirorepo
 
+**This project was left behind since Shared Preferences was making my life a lot harder than it should, so I started learning SQL database and started a new project altogether so that I could work properly on the layout since the beggining.
+
 EN:
 This is a project to get started on Kotlin and Android programming. My main objective is to create a light and friendly program able to get information about a purchase from the user, for example the store in which it was made or the price paid for it, and keep it stored in a simple and clean manner.
 At start I had no interest in keeping the data for a long time, since they should only be a way to prevent me from forgeting what I had spent until I could put it all in a spreadsheet to properly treat them. However, it might be possible to implement a better database - for now I'm using Shared Preference because it's easier - so that I could even process the data in the app.
